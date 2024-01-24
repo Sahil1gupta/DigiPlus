@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #selected-node {
+            margin-top: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="section-creation">
+            <label for="Node-type">Node Type</label>
+            <select name="Node" id="Node-type">
+                <option value="" disabled selected>Select one</option>
+                <option value="Single-Node">Single Node</option>
+                <option value="Child-Node">Child Node</option>
+                <option value="Parent-Node">Parent Node</option>
+            </select>
+
+            <label for="node-value">Node Value</label>
+            <input type="text" id="node-value"/>
+            <button id="add-node">Add Node</button>
+        </div>
+        <div class="node-modification">
+            <label for="Selected-node">Selected Node</label>
+            <input type="text" placeholder="Node Name" id="selected-node" readonly>
+            <input type="text" placeholder="New Value" id="update-value">
+            <button id="Update">Update</button>
+            <button id="Delete">Delete</button>
+        </div>
+    </div>
+    <div class="showElements" id="show"></div>
+    <script src="index.js"></script>
+</body>
+</html>
